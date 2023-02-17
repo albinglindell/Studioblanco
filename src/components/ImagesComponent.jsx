@@ -8,7 +8,7 @@ function ImagesComponent() {
           {artists.map(artist => { 
             return(
                 <Link to={`/${artist.name}`}>
-                  <img src={`${artist.image}`}alt="" />
+                  <img src={`${artist.image_sm}`}alt="" />
                 </Link>
             )
           })}

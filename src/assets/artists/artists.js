@@ -3,12 +3,24 @@ import Adrian from "../images/Adrian.jpg";
 import Joel from "../images/Joel.jpg";
 import McLovin from "../images/McLovin.jpg";
 import Tim from "../images/Tim.jpg";
+import AndySM from "../images/Andy-sm.jpg";
+import AdrianSM from "../images/Adrian-sm.jpg";
+import JoelSM from "../images/Joel-sm.jpg";
+import McLovinSM from "../images/McLovin-sm.jpg";
+import TimSM from "../images/Tim-sm.jpg";
+import AndyMD from "../images/Andy_md.jpg";
+import AdrianMD from "../images/Adrian_md.jpg";
+import JoelMD from "../images/Joel_md.jpg";
+import McLovinMD from "../images/McLovin_md.jpg";
+import TimMD from "../images/Tim_md.jpg";
 
 
  const artists = [
     {
         "name":"Joel",
         "image": Joel,
+        "image_sm":JoelSM,
+        "image_md":JoelMD,
         "email":"joel@studioblancotattoo.com",
         "instagram": "tatmush",
         "about":["Konsten har sedan barnsben varit en viktig del i Joels liv. Han har en bakgrund inom graffiti samt studerat på konstskola innan tatueringskarriären började ta fart",
@@ -22,6 +34,8 @@ import Tim from "../images/Tim.jpg";
     {
         "name":"Adrian Lindell",
         "image": Adrian,
+        "image_sm":AdrianSM,
+        "image_md":AdrianMD,
         "email":"adrian@studioblancotattoo.com",
         "instagram": "adrian.lindell",
         "about":["Adrian har en bakgrund som rockmusiker och han har även vart med i ett band! Det var i dessa kretsar intresset och fascinationen för tatueringar vaknade till liv på riktigt.",
@@ -33,6 +47,8 @@ import Tim from "../images/Tim.jpg";
     {
         "name":"Andy Blanco",
         "image": Andy,
+        "image_sm":AndySM,
+        "image_md":AndyMD,
         "email":"andy@studioblancotattoo.com",
         "instagram": "andyblancotattoo",
         "about":["Andy Blanco, grundare av Studio Blanco Tattoo, är född och uppvuxen på Södermalm i samma område där studion ligger idag. Att skapa och vara kreativ har alltid varit en naturlig del av livet. På 50- och 60-talet tatuerade hans pappa sina kompisar från slummen i Caracas (Venezuela) och idag är han aktiv som konstnär vilket färgat av sig på resten av familjen.",
@@ -44,6 +60,8 @@ import Tim from "../images/Tim.jpg";
     {
         "name":"Thomas",
         "image": McLovin,
+        "image_sm":McLovinSM,
+        "image_md":McLovinMD,
         "email":"thomas@studioblancotattoo.com",
         "instagram": "atypical.thomas",
         "about":["Oh, snap!",
@@ -55,6 +73,8 @@ import Tim from "../images/Tim.jpg";
     {
         "name":"Tim",
         "image": Tim,
+        "image_sm":TimSM,
+        "image_md":TimMD,
         "email":"tim@studioblancotattoo.com",
         "instagram": "timhagelin",
         "about":["lorem ipsum dolor amet bla bla bla lorem 123 och så vidare",

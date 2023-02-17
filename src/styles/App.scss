@@ -16,6 +16,11 @@ header{
     display: flex;
     font-family: sans-serif;
     justify-content: space-evenly;
+    .imageComponent{
+        img{
+            max-width: 350px;
+        }
+    }
     .infoContainer{
         width: 40vw;
         p{

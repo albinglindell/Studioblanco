@@ -7,7 +7,7 @@ function ProfilePage() {
   return (
     <div className='profileContainer'>
         <div className="imageComponent"> 
-        <img src={`${artist.image}`} alt="" />
+        <img src={`${artist.image_md}`} alt="" />
         </div>
         <div className="infoContainer">
             <h2>{artist.name}</h2>
