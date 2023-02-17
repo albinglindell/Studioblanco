@@ -11,7 +11,7 @@ function ProfilePage() {
         </div>
         <div className="infoContainer">
             <h2>{artist.name}</h2>
-            <h3><FaInstagram className='icon'/> {artist.instagram.toUpperCase()}</h3>
+            <a href={`https://www.instagram.com/${artist.instagram}`}><FaInstagram className='icon'/> {artist.instagram.toUpperCase()}</a>
                 {artist.about.map(paragraph =>{
                    return <p>{paragraph}</p>
                 })}

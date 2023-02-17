@@ -23,9 +23,13 @@ header{
     }
     .infoContainer{
         width: 40vw;
-        h3{
+        a{
             display: flex;
             align-items: center;
+            list-style: none;
+            color: black;
+            text-decoration: none;
+            font-weight:600;
             .icon{
                 margin-right: 5px;
                 font-size: 25px;
