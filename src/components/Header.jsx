@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logos from "../assets/logo/logos"
 function Header() {
-    console.log(logos)
   return (
     <div>
         <header>
-            <img src={logos[0]} alt="" />
+            <Link to={"/"}>
+                <img src={logos[0]} alt="" />
+            </Link>
         </header>
     </div>
   )
