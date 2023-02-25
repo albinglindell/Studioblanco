@@ -1,3 +1,5 @@
+@import "./_Colors";
+
 *{
     padding: 0;
     margin: 0;
@@ -7,9 +9,15 @@ img{
     max-width: 200px;
     margin-right: 5px;
 }
+body{
+    background-color:var(--primary-color) ;
+}
+body[data-theme="dark"], body[data-theme="light"] {
+    transition:all .2s ease;
+  }
 .svgContainer{
     position: fixed;
-    background-color: white;
+    background-color: var(--primary-color);
     width: 100%;
     height: 100vh;
     animation: removeIntroScreen .5s ease forwards 1.5s;
@@ -21,6 +29,7 @@ img{
             #path{
                 stroke-dasharray: 1117; 
                 stroke-dashoffset: 1117;
+                stroke: var(--secondary-color);
                 animation: lineAnimation 2.5s ease forwards, fillAnimation 0.5s ease forwards 1s; ;
              }
         }
@@ -29,6 +38,8 @@ img{
 header{
     display: flex;
     justify-content: center;
+    height: 130px;
+    align-items: center;
 }
 
 .artistPictureContainer{
@@ -38,10 +49,9 @@ header{
     .link{
         text-decoration: none;
         h2{
-           
+            color: var(--font-color);
             margin-bottom: 20px;
             text-align: center;
-            color: black;
         }
     }
 }
@@ -50,6 +60,7 @@ header{
     display: flex;
     font-family: sans-serif;
     justify-content: space-evenly;
+    color: var(--font-color);
     .imageComponent{
         img{
             max-width: 350px;
@@ -58,10 +69,10 @@ header{
     .infoContainer{
         width: 40vw;
         a{
+            color: var(--font-color);
             display: flex;
             align-items: center;
             list-style: none;
-            color: black;
             text-decoration: none;
             font-weight:600;
             margin: 8px 0;
@@ -84,11 +95,12 @@ header{
     height: 80vh;
     padding: 5rem;
     font-family: sans-serif;
+    color: var(--font-color);
         h2{
           font-weight: 300;  
         }
             form{
-                border:1px solid;
+                border:1px solid  var(--secondary-color);;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -107,6 +119,9 @@ header{
                         align-self: center;
                     }
             }
+}
+footer{
+    color: var(--font-color);
 }
 @media only screen and (max-width: 800px){
     .profileContainer{
@@ -150,7 +165,7 @@ header{
         fill: transparent;
     }
     to{
-        fill: black;
+        fill: var(--secondary-color);
     }
 }
 @keyframes lineAnimation{

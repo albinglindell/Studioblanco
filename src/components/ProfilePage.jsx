@@ -19,7 +19,7 @@ function ProfilePage() {
                 })}
         </div>
     </div>
-        <EmailForm name={artist.name}/>
+        <EmailForm name={artist.name} artistEmail={artist.email}/>
     </div>
   )
 }

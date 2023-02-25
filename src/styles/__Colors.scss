@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: white;
+    --font-color: Black;
+}
+
+[data-theme="dark"] {
+    --primary-color: black;
+    --secondary-color: white;
+    --font-color: #ffffff;
+}
