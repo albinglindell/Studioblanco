@@ -11,11 +11,10 @@ useEffect(()=>{
       document.body.setAttribute('data-theme', currentTheme);
       if (currentTheme === 'dark') {
         setLogo(logos[1])
-        console.log(toggleSwitch)
         toggleSwitch.current.checked = true;
       }else{
-        toggleSwitch.current.checked = false;
         setLogo(logos[0])
+        toggleSwitch.current.checked = false;
       }
   }
 },[])

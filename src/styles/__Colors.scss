@@ -1,4 +1,4 @@
-:root {
+:root  {
     --primary-color: #ffffff;
     --secondary-color: white;
     --font-color: Black;
@@ -8,4 +8,9 @@
     --primary-color: black;
     --secondary-color: white;
     --font-color: #ffffff;
+}
+[data-theme="light"] {
+    --primary-color: white;
+    --secondary-color: black;
+    --font-color: Black;
 }
