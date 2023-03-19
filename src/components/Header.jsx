@@ -35,7 +35,8 @@ useEffect(()=>{
             <Link className='Link' to={"/"}>
               <BlancoLogoSvg />
             </Link>
-            <input ref={toggleSwitch} type="checkbox" id="Darkmode" onClick={darkmode}/><label htmlFor='Darkmode'>Toggle</label>
+            <input ref={toggleSwitch} type="checkbox" id="Darkmode" onClick={darkmode}/>
+            <label className='logoLabel' htmlFor='Darkmode'>Toggle</label>
         </header>
     </div>
   )

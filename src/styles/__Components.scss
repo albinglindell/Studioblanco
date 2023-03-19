@@ -6,7 +6,7 @@ input[type=checkbox]{
     z-index: -1;
   }
   
-  label {
+  .logoLabel {
     cursor: pointer;
     text-indent: -9999px;
     width: 30px;
@@ -18,7 +18,7 @@ input[type=checkbox]{
     z-index: 0;
   }
   
-  label:after {
+  .logoLabel:after {
     content: '';
     position: absolute;
     z-index: 0;
@@ -31,15 +31,15 @@ input[type=checkbox]{
     transition: 0.3s;
   }
   
-  input:checked + label {
+  input:checked + .logoLabel {
     background: var(--secondary-color);
   }
   
-  input:checked + label:after {
+  input:checked + .logoLabel:after {
     left: calc(100% - 5px);
     transform: translateX(-100%);
   }
   
-  label:active:after {
+  .logoLabel:active:after {
     width: 10px;
   }
