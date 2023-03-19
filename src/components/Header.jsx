@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logos from "../assets/logo/logos"
+import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
 function Header() {
 const toggleSwitch = useRef()
 const [logo, setLogo]= useState(logos[0])
@@ -21,22 +22,22 @@ useEffect(()=>{
   const darkmode= (e)=>{
       if (e.target.checked){
         document.body.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', "dark"); //add this
-        setLogo(logos[1])
+        localStorage.setItem('theme', "dark"); 
+        setLogo(logos[0])
     }
     else {
         document.body.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', "light"); //add this
+        localStorage.setItem('theme', "light"); 
         setLogo(logos[0])
     }  
   }
   return (
     <div>
         <header>
-            <Link to={"/"}>
-                <img src={logo} alt="logo" />
+            <Link className='Link' to={"/"}>
+              <BlancoLogoSvg />
             </Link>
-            <input ref={toggleSwitch} type="checkbox" id="Darkmode" onClick={darkmode}/>
+            <input ref={toggleSwitch} type="checkbox" id="Darkmode" onClick={darkmode}/><label htmlFor='Darkmode'>Toggle</label>
         </header>
     </div>
   )

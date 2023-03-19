@@ -1,4 +1,5 @@
 @import "./_Colors";
+@import "./_Components";
 
 *{
     padding: 0;
@@ -21,6 +22,7 @@ body[data-theme="dark"], body[data-theme="light"] {
     width: 100%;
     height: 100vh;
     animation: removeIntroScreen .5s ease forwards 1.5s;
+    z-index: 1;
         #logo{
             position: absolute;
             left: 50%;
@@ -40,6 +42,14 @@ header{
     justify-content: center;
     height: 130px;
     align-items: center;
+}
+.blancoLogo{
+    .blancoLogoSvg{
+        width: 80vw;
+    }
+    .blancoLogoPath{
+        fill: var(--secondary-color);
+    }
 }
 
 .artistPictureContainer{
