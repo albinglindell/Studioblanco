@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import logos from "../assets/logo/logos"
 import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
 function Header() {
 const toggleSwitch = useRef()
-const [logo, setLogo]= useState(logos[0])
+
 
 useEffect(()=>{
   const currentTheme = localStorage.getItem('theme');
@@ -14,7 +14,7 @@ useEffect(()=>{
         setLogo(logos[1])
         toggleSwitch.current.checked = true;
       }else{
-        setLogo(logos[0])
+        
         toggleSwitch.current.checked = false;
       }
   }
@@ -23,12 +23,12 @@ useEffect(()=>{
       if (e.target.checked){
         document.body.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', "dark"); 
-        setLogo(logos[0])
+        
     }
     else {
         document.body.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', "light"); 
-        setLogo(logos[0])
+        
     }  
   }
   return (
