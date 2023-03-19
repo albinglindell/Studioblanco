@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import logos from "../assets/logo/logos"
 import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
 function Header() {
 const toggleSwitch = useRef()
@@ -11,7 +10,6 @@ useEffect(()=>{
   if (currentTheme) {
       document.body.setAttribute('data-theme', currentTheme);
       if (currentTheme === 'dark') {
-        setLogo(logos[1])
         toggleSwitch.current.checked = true;
       }else{
         
