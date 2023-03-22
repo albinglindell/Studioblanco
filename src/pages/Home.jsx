@@ -11,10 +11,12 @@ function Home() {
     <div>
         <SvgAnimation />
         <Header/>
+        <section>
         <Routes>
             <Route path='/' element={<ImagesComponent />}/>
             <Route  path='/:name' element={<ProfilePage />}/>
         </Routes>
+        </section>
         <Footer />
     </div>
   )
