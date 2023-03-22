@@ -6,7 +6,7 @@ function ProfilePage() {
     const {name} = useParams()
     const artist = artists.find( (artistName) => artistName.name === name );
   return (
-    <div className="">
+    <div>
     <div className='profileContainer'>
         <div className="imageComponent"> 
         <img src={`${artist.image_md}`} alt="" />

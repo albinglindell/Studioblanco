@@ -43,3 +43,11 @@ input[type=checkbox]{
   .logoLabel:active:after {
     width: 10px;
   }
+
+  //Line component
+  .line{
+    width: 80vw;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+  }

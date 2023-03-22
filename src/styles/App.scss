@@ -75,6 +75,7 @@ header{
     flex-wrap: wrap;
     .link{
         text-decoration: none;
+        margin-top: 10vh;
         h2{
             font-family: sans-serif;
             font-weight: 200;
@@ -91,6 +92,7 @@ header{
     font-family: sans-serif;
     justify-content: space-evenly;
     color: var(--font-color);
+    margin-top: 10vh;
     .imageComponent{
         img{
             max-width: 350px;
