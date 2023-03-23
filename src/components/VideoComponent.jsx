@@ -1,29 +1,25 @@
-import React, { useState, useEffect } from 'react'
-import loop from "../assets/videos/loop.mp4"
-import lightMode from "../assets/videos/whitemode.mp4"
+import React, { useContext } from "react";
+import loop from "../assets/videos/loop.mp4";
+import lightMode from "../assets/videos/whitemode.mp4";
+import dataContext from "./store/data-context";
 function VideoComponent() {
-  const [darkmode, setDarkmode] = useState()
-  useEffect(()=>{
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        document.body.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
-          setDarkmode(true)
-        }else{
-          setDarkmode(false)
-        }
-    }
-  },[])
+  const context = useContext(dataContext);
+  console.log(context.darkmode);
   return (
-    <div className='videoComponent'>
-      {
-        darkmode ?  <video className='video' autoPlay muted src={loop} loop></video>
-        :
-            <video className='video' autoPlay muted src={lightMode} loop></video>
-      }
-           
+    <div className="videoComponent">
+      {context.darkmode ? (
+        <video className="video" autoPlay={true} muted src={loop} loop></video>
+      ) : (
+        <video
+          className="video"
+          autoPlay={true}
+          muted
+          src={lightMode}
+          loop
+        ></video>
+      )}
     </div>
-  )
+  );
 }
 
-export default VideoComponent
+export default VideoComponent;

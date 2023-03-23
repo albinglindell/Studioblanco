@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
+import dataContext from './store/data-context'
 function Header() {
 const toggleSwitch = useRef()
-
+const context = useContext(dataContext) 
 
 useEffect(()=>{
   const currentTheme = localStorage.getItem('theme');
@@ -19,14 +20,14 @@ useEffect(()=>{
 },[])
   const darkmode= (e)=>{
       if (e.target.checked){
-        document.body.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', "dark"); 
-        
+        // document.body.setAttribute('data-theme', 'dark');
+        // localStorage.setItem('theme', "dark"); 
+        context.darkmodeSwitch()
     }
     else {
-        document.body.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', "light"); 
-        
+        // document.body.setAttribute('data-theme', 'light');
+        // localStorage.setItem('theme', "light"); 
+        context.lightmodeSwitch()
     }  
   }
   return (
