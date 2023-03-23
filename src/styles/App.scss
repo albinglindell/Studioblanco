@@ -23,15 +23,14 @@ body[data-theme="dark"], body[data-theme="light"] {
 .svgContainer{
     position: fixed;
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     animation: removeIntroScreen .5s ease forwards 1.5s;
     z-index: 5;
         #logo{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             #path{
                 stroke-dasharray: 1117; 
                 stroke-dashoffset: 1117;
