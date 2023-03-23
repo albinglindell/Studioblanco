@@ -17,8 +17,8 @@ img{
 body{
     background-color:var(--primary-color) ;
 }
-body[data-theme="dark"], body[data-theme="light"] {
-    transition:all .2s ease;
+body[data-theme="dark"] *, body[data-theme="light"] * {
+    transition:all .5s ease;
   }
 .svgContainer{
     position: fixed;
