@@ -9,7 +9,7 @@ import VideoComponent from '../components/VideoComponent'
 import HeaderImageComponent from "../components/HeaderImageComponent"
 
 function Home() {
-  const [device, setDevice] = useState()
+  const [device, setDevice] = useState(true)
 
     window.addEventListener("resize", ()=>{
       if(window.innerWidth < 600){

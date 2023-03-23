@@ -20,13 +20,9 @@ useEffect(()=>{
 },[])
   const darkmode= (e)=>{
       if (e.target.checked){
-        // document.body.setAttribute('data-theme', 'dark');
-        // localStorage.setItem('theme', "dark"); 
         context.darkmodeSwitch()
     }
     else {
-        // document.body.setAttribute('data-theme', 'light');
-        // localStorage.setItem('theme', "light"); 
         context.lightmodeSwitch()
     }  
   }
