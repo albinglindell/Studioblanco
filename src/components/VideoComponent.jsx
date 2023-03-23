@@ -4,7 +4,6 @@ import lightMode from "../assets/videos/whitemode.mp4";
 import dataContext from "./store/data-context";
 function VideoComponent() {
   const context = useContext(dataContext);
-  console.log(context.darkmode);
   return (
     <div className="videoComponent">
       {context.darkmode ? (
