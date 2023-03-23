@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -9,7 +9,15 @@ import VideoComponent from '../components/VideoComponent'
 import HeaderImageComponent from "../components/HeaderImageComponent"
 
 function Home() {
-  const [device, setDevice] = useState(true)
+  const [device, setDevice] = useState()
+  useEffect(()=>{
+    if(window.innerWidth < 600){
+      setDevice(false)
+    }else{
+      setDevice(true) 
+    }
+  },[])
+
 
     window.addEventListener("resize", ()=>{
       if(window.innerWidth < 600){
