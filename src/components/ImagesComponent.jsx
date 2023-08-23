@@ -1,6 +1,6 @@
 import React from 'react'
 import artists from "../assets/artists/artists"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 function ImagesComponent() {

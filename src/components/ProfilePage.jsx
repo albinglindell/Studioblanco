@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import artists from "../assets/artists/artists"
 import { FaInstagram } from "react-icons/fa";
-import EmailForm from './EmailForm';
+// import EmailForm from './EmailForm';
 function ProfilePage() {
     const {name} = useParams()
     const artist = artists.find( (artistName) => artistName.name === name );
