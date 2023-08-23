@@ -7,6 +7,7 @@ import ProfilePage from '../components/ProfilePage'
 import SvgAnimation from '../components/SvgAnimation'
 import VideoComponent from '../components/VideoComponent'
 import HeaderImageComponent from "../components/HeaderImageComponent"
+import AboutUs from '../components/AboutUs'
 
 function Home() {
   const [device, setDevice] = useState()
@@ -35,13 +36,14 @@ function Home() {
           <Header/>
           {device ? <VideoComponent />: <HeaderImageComponent /> }
         </section>
-        <section>
+        <section id='contentSection'>
         <Routes>
-            <Route path='/' element={<ImagesComponent />}/>
+            <Route path='/Artists' element={<ImagesComponent />}/>
+            <Route  path='/' element={<AboutUs />}/>
             <Route  path='/:name' element={<ProfilePage />}/>
         </Routes>
         </section>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

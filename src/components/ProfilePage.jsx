@@ -9,17 +9,17 @@ function ProfilePage() {
     <div>
     <div className='profileContainer'>
         <div className="imageComponent"> 
-        <img src={`${artist.image_md}`} alt="" />
+        <img className='artistImg' src={`${artist.image_md}`} alt="" />
         </div>
         <div className="infoContainer">
-            <h2>{artist.name}</h2>
+            <h1>{artist.name}</h1>
             <a href={`https://www.instagram.com/${artist.instagram}`}><FaInstagram className='icon'/> {artist.instagram.toUpperCase()}</a>
                 {artist.about.map(paragraph =>{
                    return <p>{paragraph}</p>
                 })}
         </div>
     </div>
-        <EmailForm name={artist.name} artistEmail={artist.email}/>
+        {/* <EmailForm name={artist.name} artistEmail={artist.email}/> */}
     </div>
   )
 }

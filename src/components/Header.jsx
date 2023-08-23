@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
 import dataContext from './store/data-context'
 function Header() {
@@ -29,10 +30,14 @@ useEffect(()=>{
   return (
     <div>
         <header>
-            <Link className='Link' to={"/"}>
+            <Link className='navLink' to={"/"}>
               <BlancoLogoSvg />
               <div className="line"></div>
-            </Link>
+              <nav className='navigation'>
+                <HashLink className='Link' to={"/Artists#contentSection"}>Artists</HashLink>
+                <HashLink className='Link' to={"/#contentSection"}>About us</HashLink>
+              </nav>
+                </Link>
             <input ref={toggleSwitch} type="checkbox" id="Darkmode" onClick={darkmode}/>
             <label className='logoLabel' htmlFor='Darkmode'>Toggle</label>
         </header>
