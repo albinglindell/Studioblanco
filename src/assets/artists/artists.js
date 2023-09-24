@@ -2,17 +2,14 @@ import Andy from "../images/Andy.jpg";
 import Adrian from "../images/Adrian.jpg";
 import Joel from "../images/Joel.jpg";
 import McLovin from "../images/McLovin.jpg";
-import Tim from "../images/Tim.jpg";
 import AndySM from "../images/Andy-sm.jpg";
 import AdrianSM from "../images/Adrian-sm.jpg";
 import JoelSM from "../images/Joel-sm.jpg";
 import McLovinSM from "../images/McLovin-sm.jpg";
-import TimSM from "../images/Tim-sm.jpg";
 import AndyMD from "../images/Andy_md.jpg";
 import AdrianMD from "../images/Adrian_md.jpg";
 import JoelMD from "../images/Joel_md.jpg";
 import McLovinMD from "../images/McLovin_md.jpg";
-import TimMD from "../images/Tim_md.jpg";
 
 
  const artists = [
