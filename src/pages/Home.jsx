@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-// import Footer from '../components/Footer'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import ImagesComponent from '../components/ImagesComponent'
 import ProfilePage from '../components/ProfilePage'
@@ -43,7 +43,8 @@ function Home() {
             <Route  path='/:name' element={<ProfilePage />}/>
         </Routes>
         </section>
-        {/* <Footer /> */}
+        {/* <div className="footerSection"></div> */}
+          <Footer />
     </div>
   )
 }

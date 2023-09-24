@@ -69,21 +69,6 @@ import TimMD from "../images/Tim_md.jpg";
         "Sweet, sweet liberty!",
         "Whoa, I'm feelin' it!",
         "Aw, Shoot!"]
-    },
-    {
-        "name":"Tim",
-        "image": Tim,
-        "image_sm":TimSM,
-        "image_md":TimMD,
-        "email":"tim@studioblancotattoo.com",
-        "instagram": "timhagelin",
-        "about":["lorem ipsum dolor amet bla bla bla lorem 123 och så vidare",
-
-        "lorem ipsum dolor amet bla bla bla lorem 123 och så vidare",
-
-        "lorem ipsum dolor amet bla bla bla lorem 123 och så vidare",
-
-       "lorem ipsum dolor amet bla bla bla lorem 123 och så vidare"]
     }
 ]
 export default artists
