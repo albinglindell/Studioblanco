@@ -24,3 +24,11 @@ $box-shadow:#5C5C5C;
     --text-shadow:#ffffff;
 
 }
+[data-theme=""] {
+    --primary-color: white;
+    --secondary-color: #1B2125;
+    --font-color: #353535;
+    --bgColor: linear-gradient(-45deg,#ffffff, #434343);
+    --text-shadow:#ffffff;
+
+}
