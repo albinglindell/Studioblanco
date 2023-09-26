@@ -338,6 +338,17 @@ width: 100%;
                 }
         }
     }
+    footer{
+        .footerContainer{
+            flex-direction: column;
+            margin-top: 0;
+            align-items: center;
+            .streetmap{
+                  width: 95vw;
+                  height: 300px;
+              }
+        }
+    }
 }
 
 
