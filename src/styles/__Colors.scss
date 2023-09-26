@@ -13,14 +13,14 @@ $box-shadow:#5C5C5C;
     --primary-color: #1B2125;
     --secondary-color: white;
     --font-color: #ffffff;
-    --bgColor: linear-gradient(45deg, #111416, #393D41);
+    --bgColor: linear-gradient(45deg, #101b1e, #1e404b);
     --text-shadow:#000000;
 }
 [data-theme="light"] {
     --primary-color: white;
     --secondary-color: #1B2125;
     --font-color: #353535;
-    --bgColor: linear-gradient(-45deg,#ffffff, #434343);
+    --bgColor: linear-gradient(45deg, #ffffff, #ffffff);
     --text-shadow:#ffffff;
 
 }
@@ -28,7 +28,7 @@ $box-shadow:#5C5C5C;
     --primary-color: white;
     --secondary-color: #1B2125;
     --font-color: #353535;
-    --bgColor: linear-gradient(-45deg,#ffffff, #434343);
+    --bgColor: linear-gradient(45deg, #d8f6ff, #6ddbff);
     --text-shadow:#ffffff;
 
 }
