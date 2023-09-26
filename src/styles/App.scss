@@ -343,9 +343,21 @@ width: 100%;
             flex-direction: column;
             margin-top: 0;
             align-items: center;
+            justify-content: space-between;
+            height: 70vh;
+            .footerInfoContainer{
+                padding: 20px;
+                gap: 5px;
+                height: fit-content;
+                font-size: 18px;
+                .footerInfo{
+                    justify-content: flex-start;
+                    gap: 5px;
+                }
+            }
             .streetmap{
                   width: 95vw;
-                  height: 300px;
+                  height: 150px;
               }
         }
     }

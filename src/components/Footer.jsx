@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       <div className="footerContainer">
       <div className="footerInfoContainer">
-        <p>contact:</p>
+        <p className='footerP'>contact:</p>
         <ul className='footerInfo'>
           <li>
             Telefon: 08-583 553 62
@@ -26,7 +26,7 @@ function Footer() {
             Pendeltåg : Södrastation
           </li>
         </ul>
-        <p>{year} Studioblancotattoo</p>
+        <p className='footerP'>{year} Studioblancotattoo</p>
       </div>
       <iframe
             className='streetmap'
