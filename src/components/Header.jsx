@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import BlancoLogoSvg from "../assets/logo/BlancoLogoSvg"
 import dataContext from './store/data-context'
+import FlimmeringLogo from './FlimmerLogo';
+
 function Header() {
 const toggleSwitch = useRef()
 const context = useContext(dataContext) 
@@ -30,6 +32,7 @@ useEffect(()=>{
   return (
     <div>
         <header>
+          <FlimmeringLogo />
             <Link className='navLink' to={"/"}>
               <BlancoLogoSvg />
               <div className="line"></div>

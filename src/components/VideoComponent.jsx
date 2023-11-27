@@ -6,6 +6,7 @@ function VideoComponent() {
   const context = useContext(dataContext);
   return (
     <div className="videoComponent">
+      <div className="filterOverlay"></div>
       {context.darkmode ? (
         <video className="video" autoPlay={true} muted src={loop} loop></video>
       ) : (

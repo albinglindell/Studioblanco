@@ -34,7 +34,7 @@ img{
     box-shadow: -3px 3px 3px $box-shadow;
 }
 body{
-
+overflow-x: hidden;
     &::-webkit-scrollbar{
         display: none;
 
@@ -109,6 +109,17 @@ a:-webkit-any-link{
         object-fit: cover;
     }
 }
+.flimmerContainer{
+ 
+    .videoFlimmer{
+        position: absolute;
+        z-index: 1;
+        width: 130px;
+        right: 40px;
+        bottom: 40px;
+        mix-blend-mode: screen;
+    }
+}
 .videoComponent{
     width: 100%;
     height: 100vh;
@@ -119,6 +130,14 @@ a:-webkit-any-link{
         width: 100%;
         height: 100%;    
         object-fit: cover;
+        z-index: 0;
+}
+.filterOverlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.285);
 }
 }
 .blancoLogo{
@@ -223,14 +242,13 @@ width: 100%;
 .footerSection{
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
     footer{
         color: var(--neonColor);
         background: var(--blancoBg);
         height: 100vh;
-        width: 100vw;
         position: fixed;
         bottom: 0;
         left: 0;
